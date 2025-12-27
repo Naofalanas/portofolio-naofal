@@ -1,322 +1,191 @@
 <!DOCTYPE html>
-<html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Naofal Anas | Web Developer</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naofal Anas | Frontend Developer</title>
+    
+    <!-- Fonts: Inter for everything (Swiss Style) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
-
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&f[]=inter@400,500&display=swap"
-      rel="stylesheet"
-    />
-
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
-      defer
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
-      defer
-    ></script>
-
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    
+    <!-- Main Script -->
     <script src="script.js" defer></script>
-  </head>
-  <body>
-    <div id="preloader">
-      <div class="loader"></div>
-    </div>
+</head>
+<body>
+
+    <!-- Navbar -->
     <nav class="navbar">
-      <a href="#home" class="logo">Naofal<span>Dev</span>.</a>
-
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-
-      <div class="menu-toggle" id="mobile-menu">
-        <i data-feather="menu"></i>
-      </div>
+        <div class="container">
+            <a href="#" class="logo">NAOFAL'S PORTOFOLIO.</a>
+            
+            <div class="nav-links">
+                <a href="#projects">Work</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+            <div class="menu-toggle">
+                <i data-feather="menu"></i>
+            </div>
+        </div>
     </nav>
 
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <h3>Halo, saya</h3>
-        <h1>Naofal Anas S.</h1>
-        <p>
-          Seorang
-          <span
-            class="txt-type"
-            data-wait="3000"
-            data-words='["Web Developer", "UI/UX Enthusiast", "Freelancer"]'
-          ></span>
-          yang fokus menciptakan pengalaman digital modern, responsif, dan
-          fungsional.
-        </p>
-        <div class="hero-buttons">
-          <a href="#projects" class="btn primary">Lihat Karya</a>
-          <a href="#contact" class="btn secondary">Hubungi Saya</a>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Building clearer digital experiences.</h1>
+            <p>I'm Naofal Anas, a Frontend Developer based in Indonesia. I specialize in building accessible, high-performance web applications with a focus on simplicity.</p>
+            <div class="btn-group">
+                <a href="#projects" class="btn btn-primary">View Work</a>
+                <a href="#contact" class="btn btn-outline">Get in Touch</a>
+            </div>
         </div>
-      </div>
-
-      <div class="hero-image">
-        <div class="img-box">
-          <img src="img/profile.png" alt="Naofal Anas" />
-        </div>
-      </div>
-
-      <div class="glow-effect"></div>
     </section>
 
+    <!-- About & Skills -->
     <section id="about" class="section">
-      <h2 class="section-title">Tentang <span>Saya</span></h2>
-      <div class="about-container">
-        <p class="about-text">
-          Saya adalah pengembang web yang berdedikasi untuk mengubah ide
-          kompleks menjadi antarmuka yang elegan. Menguasai alur kerja modern
-          dari desain hingga deployment.
-        </p>
-
-        <div class="skills-wrapper">
-          <h3>Tech Stack</h3>
-          <div class="marquee-container">
-            <div class="marquee-content">
-              <div class="skill-item"><i data-feather="code"></i> HTML5</div>
-              <div class="skill-item"><i data-feather="layout"></i> CSS3</div>
-              <div class="skill-item">
-                <i data-feather="cpu"></i> JavaScript
-              </div>
-              <div class="skill-item">
-                <i data-feather="layers"></i> AlpineJS
-              </div>
-              <div class="skill-item">
-                <i data-feather="git-branch"></i> Git
-              </div>
-              <div class="skill-item"><i data-feather="wind"></i> Tailwind</div>
-              <div class="skill-item"><i data-feather="code"></i> HTML5</div>
-              <div class="skill-item"><i data-feather="layout"></i> CSS3</div>
-              <div class="skill-item">
-                <i data-feather="cpu"></i> JavaScript
-              </div>
-              <div class="skill-item">
-                <i data-feather="layers"></i> AlpineJS
-              </div>
-              <div class="skill-item">
-                <i data-feather="git-branch"></i> Git
-              </div>
-              <div class="skill-item"><i data-feather="wind"></i> Tailwind</div>
+        <div class="container">
+            <span class="section-label">About Me</span>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I believe that good design is as little design as possible. My approach to development focuses on clean code, performance, and user-centric functionality.</p>
+                    <p>Currently a Computer Science student, I spend my time exploring modern frontend technologies and building tools that solve real problems.</p>
+                </div>
+                <div class="skills-sidebar">
+                    <span class="section-label" style="display:block; margin-bottom:12px;">Tech Stack</span>
+                    <div class="skills-list">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript (ES6+)</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">AlpineJS</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
+    <!-- Projects (Grid) -->
     <section id="projects" class="section">
-      <h2 class="section-title">Proyek <span>Terbaru</span></h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="card-image">
-            <img src="img/kedaikopiwebsite.png" alt="Kopi Senja Website" />
-            <div class="image-overlay">
-              <a href="https://tutorial-otodidak2.vercel.app/" class="btn-view"
-                >Lihat Detail</a
-              >
-            </div>
-          </div>
-          <div class="card-content">
-            <h3>Kopi Senja Premium</h3>
-            <p>
-              Website Coffee Shop modern dengan fitur keranjang belanja
-              interaktif dan animasi scroll yang halus.
-            </p>
-            <div class="card-tags">
-              <span>HTML5</span><span>CSS3 Modern</span><span>AlpineJS</span>
-            </div>
-            <div class="card-links">
-              <a href="https://github.com/Naofalanas/tutorial-otodidak2"
-                ><i data-feather="github"></i> Code</a
-              >
-              <a href="https://tutorial-otodidak2.vercel.app/"
-                ><i data-feather="external-link"></i> Live App</a
-              >
-            </div>
-          </div>
-        </div>
+        <div class="container">
+            <span class="section-label">Selected Work</span>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <a href="https://tutorial-otodidak2.vercel.app/" target="_blank" class="project-card">
+                    <div class="project-image">
+                        <img src="img/kedaikopiwebsite.png" alt="Kopi Senja">
+                    </div>
+                    <div class="project-info">
+                        <h3>Kopi Senja</h3>
+                        <div class="project-meta">E-Commerce • AlpineJS</div>
+                    </div>
+                </a>
 
-        <div class="project-card" style="transition-delay: 100ms">
-          <div class="card-image">
-            <img src="img/dashboard1.png" alt="Dashboard" />
-            <div class="image-overlay">
-              <a href="https://dashboardsayurku.vercel.app/" class="btn-view"
-                >Lihat Detail</a
-              >
-            </div>
-          </div>
-          <div class="card-content">
-            <h3>E-Commerce Dashboard</h3>
-            <p>
-              Dashboard admin untuk manajemen data penjualan dengan tampilan
-              grafik realtime.
-            </p>
-            <div class="card-tags">
-              <span>HTML5</span><span>CSS3 Modern</span><span>VanillaJS</span
-              ><span>Chart.js</span>
-            </div>
-            <div class="card-links">
-              <a href="https://github.com/Naofalanas/dashboard1"
-                ><i data-feather="github"></i> Code</a
-              >
-              <a href="https://dashboardsayurku.vercel.app/"
-                ><i data-feather="external-link"></i> Live App</a
-              >
-            </div>
-          </div>
-        </div>
+                <!-- Project 2 -->
+                <a href="https://dashboardsayurku.vercel.app/" target="_blank" class="project-card">
+                    <div class="project-image">
+                        <img src="img/dashboard1.png" alt="SayurKu Dashboard">
+                    </div>
+                    <div class="project-info">
+                        <h3>SayurKu Dashboard</h3>
+                        <div class="project-meta">Admin Panel • Chart.js</div>
+                    </div>
+                </a>
 
-        <div class="project-card">
-          <div class="card-image">
-            <img src="img/sslaptopcrypto.png" alt="CryptoApp" />
-            <div class="image-overlay">
-              <a href="https://cryptoapp-blush.vercel.app/home" class="btn-view"
-                >Lihat Detail</a
-              >
+                <!-- Project 3 -->
+                <a href="https://kamubisaaja.com" target="_blank" class="project-card">
+                    <div class="project-image">
+                        <img src="img/sskamubisaaja.png" alt="Kamubisaaja">
+                    </div>
+                    <div class="project-info">
+                        <h3>Kamubisaaja</h3>
+                        <div class="project-meta">Frontend • Laravel</div>
+                    </div>
+                </a>
+
+                <!-- Project 4 -->
+                <a href="https://cryptoapp-blush.vercel.app/home" target="_blank" class="project-card">
+                    <div class="project-image">
+                        <img src="img/sslaptopcrypto.png" alt="Crypto Tracker">
+                    </div>
+                    <div class="project-info">
+                        <h3>Crypto Tracker</h3>
+                        <div class="project-meta">Mobile App • Vue.js</div>
+                    </div>
+                </a>
             </div>
-          </div>
-          <div class="card-content">
-            <h3>Crypto Tracker Mobile</h3>
-            <p>
-              Aplikasi pemantau harga aset kripto secara real-time. Menggunakan
-              Coinlore API untuk fetching data dan Ionic Framework untuk
-              tampilan mobile native.
-            </p>
-            <div class="card-tags">
-              <span>Vue.js</span>
-              <span>Ionic</span>
-              <span>Rest API</span>
-              <span>Async/Await</span>
-            </div>
-            <div class="card-links">
-              <a href="https://github.com/Naofalanas/cryptoapp"
-                ><i data-feather="github"></i> Code</a
-              >
-              <a href="https://cryptoapp-blush.vercel.app/home"
-                ><i data-feather="external-link"></i> Live App</a
-              >
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        // GANTI 'YOUR_PUBLIC_KEY' DENGAN PUBLIC KEY LU DARI EMAILJS
-        emailjs.init("z0e0Fx7RNHI36wDz8");
-      })();
-    </script>
-
-    <section id="contact" class="section">
-      <h2 class="section-title">Hubungi <span>Saya</span></h2>
-
-      <div class="contact-container">
-        <div class="contact-info">
-          <h3>Let's Talk!</h3>
-          <p>
-            Punya proyek menarik atau sekadar ingin menyapa? Isi form di samping
-            atau hubungi saya lewat sosial media.
-          </p>
-
-          <div class="contact-details">
-            <div class="item">
-              <i data-feather="mail"></i>
-              <span>anasnoval96@gmail.com</span>
+    <!-- Certificates -->
+    <section id="certificates" class="section">
+        <div class="container">
+            <span class="section-label">Certifications</span>
+            
+            <div class="certificates-grid">
+                <!-- Certificate 1 (Placeholder) -->
+                <div class="certificate-item">
+                    <div class="cert-image">
+                        <!-- Placeholder Image: Replace src with your image -->
+                        <img src="img/sertifikatmyskillFE.png" alt="Certificate Name">
+                    </div>
+                    <div class="cert-info">
+                        <h3>Web Development : Frontend</h3>
+                        <p class="cert-issuer">Issued by MySkill • 2025</p>
+                    </div>
+                </div>
             </div>
-            <div class="item">
-              <i data-feather="map-pin"></i>
-              <span>Indonesia</span>
-            </div>
-          </div>
-
-          <div class="social-links-left">
-            <a href="https://github.com/Naofalanas"
-              ><i data-feather="github"></i
-            ></a>
-            <a href="https://www.linkedin.com/in/naofal-anas-setianto"
-              ><i data-feather="linkedin"></i
-            ></a>
-            <a href="https://www.instagram.com/novalanass"
-              ><i data-feather="instagram"></i
-            ></a>
-            <a href="https://wa.me/085777136377"
-              ><i data-feather="phone"></i
-            ></a>
-          </div>
         </div>
-
-        <form id="contact-form" class="contact-form">
-          <div class="form-group">
-            <input
-              type="text"
-              name="user_name"
-              id="name"
-              required
-              placeholder="Nama Anda"
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="email"
-              name="user_email"
-              id="email"
-              required
-              placeholder="Email Anda"
-            />
-          </div>
-          <div class="form-group">
-            <textarea
-              name="message"
-              id="message"
-              rows="5"
-              required
-              placeholder="Tulis pesan di sini..."
-            ></textarea>
-          </div>
-          <button type="submit" class="btn primary" id="btn-submit">
-            Kirim Pesan
-          </button>
-          <p id="form-status"></p>
-        </form>
-      </div>
     </section>
 
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Let's work together.</h2>
+            <a href="mailto:anasnoval96@gmail.com">anasnoval96@gmail.com</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-      <p>
-        &copy; <span id="year"></span> Naofal Anas Setianto. All Rights
-        Reserved.
-      </p>
+        <div class="container">
+            <div class="copyright">
+                &copy; <span id="year"></span> Naofal Anas.
+            </div>
+            <div class="footer-socials">
+                <a href="https://github.com/Naofalanas" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/naofal-anas-setianto" target="_blank">LinkedIn</a>
+                <a href="https://instagram.com/novalanass" target="_blank">Instagram</a>
+            </div>
+        </div>
     </footer>
 
-    <a href="#" class="back-to-top" id="backToTop">
-      <i data-feather="arrow-up"></i>
-    </a>
-
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("z0e0Fx7RNHI36wDz8");
+        })();
+    </script>
+    
     <script>
       feather.replace();
     </script>
-  </body>
+</body>
 </html>
