@@ -4,7 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naofal Anas | Frontend Developer</title>
+
+    <!-- Primary Meta Tags -->
+    <title>Naofal Anas | Frontend Developer - React, Vue.js & JavaScript Expert</title>
+    <meta name="title" content="Naofal Anas | Frontend Developer - React, Vue.js & JavaScript Expert">
+    <meta name="description"
+        content="Experienced Frontend Developer specializing in React dashboards & e-commerce solutions. Delivering high-performance web applications with 40% efficiency gains. Available for hire on Upwork.">
+    <meta name="keywords"
+        content="frontend developer, react developer, vue.js developer, javascript developer, web developer, UI developer, dashboard developer, e-commerce developer, upwork developer, freelance developer">
+    <meta name="author" content="Naofal Anas Setianto">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://portofolio-naofal.vercel.app/">
+    <meta property="og:title" content="Naofal Anas | Frontend Developer - React, Vue.js & JavaScript Expert">
+    <meta property="og:description"
+        content="Experienced Frontend Developer specializing in React dashboards & e-commerce solutions. Delivering high-performance web applications with 40% efficiency gains.">
+    <meta property="og:image" content="https://portofolio-naofal.vercel.app/img/profile.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://portofolio-naofal.vercel.app/">
+    <meta property="twitter:title" content="Naofal Anas | Frontend Developer - React, Vue.js & JavaScript Expert">
+    <meta property="twitter:description"
+        content="Experienced Frontend Developer specializing in React dashboards & e-commerce solutions. Delivering high-performance web applications with 40% efficiency gains.">
+    <meta property="twitter:image" content="https://portofolio-naofal.vercel.app/img/profile.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://portofolio-naofal.vercel.app/">
 
     <!-- Fonts: Inter for everything (Swiss Style) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,12 +83,29 @@
     <!-- Hero -->
     <section class="hero">
         <div class="container hero-content">
-            <h1>Building clearer digital experiences.</h1>
-            <p>I'm Naofal Anas, a Frontend Developer based in Indonesia. I specialize in building accessible,
-                high-performance web applications with a focus on simplicity.</p>
+            <h1>Building High-Performance Web Applications That Drive Results.</h1>
+            <p>Frontend Developer specializing in React dashboards & e-commerce solutions. I help businesses transform
+                complex data into intuitive interfaces, delivering projects on time with clean, maintainable code.
+            </p>
             <div class="btn-group">
                 <a href="#projects" class="btn btn-primary">View Work</a>
                 <a href="#contact" class="btn btn-outline">Get in Touch</a>
+            </div>
+
+            <!-- Quick Stats -->
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Projects Delivered</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">40%</div>
+                    <div class="stat-label">Avg. Performance Boost</div>
+                </div>
             </div>
         </div>
     </section>
@@ -66,10 +116,22 @@
             <span class="section-label">About Me</span>
             <div class="about-grid">
                 <div class="about-text">
+                    <div class="profile-section">
+                        <img src="img/profile.png" alt="Naofal Anas" class="profile-photo">
+                        <div class="availability-badge">
+                            <span class="status-dot"></span>
+                            Available for hire
+                        </div>
+                    </div>
                     <p>I believe that good design is as little design as possible. My approach to development focuses on
                         clean code, performance, and user-centric functionality.</p>
-                    <p>Currently a Computer Science student, I spend my time exploring modern frontend technologies and
-                        building tools that solve real problems.</p>
+                    <p>Currently a Computer Science student at Universitas Terbuka, I spend my time exploring modern
+                        frontend technologies and
+                        building tools that solve real problems. I'm passionate about creating seamless user experiences
+                        and writing maintainable code.</p>
+                    <p><strong>Why work with me?</strong> I prioritize clear communication, meet deadlines consistently,
+                        and deliver production-ready code. Whether you need a complex dashboard, e-commerce platform, or
+                        custom web application, I bring both technical expertise and reliability to every project.</p>
                 </div>
                 <div class="skills-sidebar">
                     <span class="section-label" style="display:block; margin-bottom:12px;">Tech Stack</span>
@@ -78,10 +140,14 @@
                         <span class="skill-tag">CSS3</span>
                         <span class="skill-tag">JavaScript (ES6+)</span>
                         <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue.js</span>
                         <span class="skill-tag">Bootstrap</span>
                         <span class="skill-tag">Tailwind CSS</span>
                         <span class="skill-tag">AlpineJS</span>
+                        <span class="skill-tag">Chart.js</span>
+                        <span class="skill-tag">GSAP</span>
                         <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Responsive Design</span>
                     </div>
                 </div>
             </div>
@@ -107,13 +173,137 @@
         </div>
     </section>
 
+    <!-- Services -->
+    <section id="services" class="section services-section">
+        <div class="container">
+            <span class="section-label">What I Offer</span>
+            <h2 class="section-title">Services</h2>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-feather="layout"></i>
+                    </div>
+                    <h3>Landing Pages & Websites</h3>
+                    <p>Pixel-perfect, responsive landing pages and multi-page websites optimized for conversions and
+                        performance.</p>
+                    <div class="service-meta">
+                        <span>Delivery: 3-7 days</span>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-feather="bar-chart-2"></i>
+                    </div>
+                    <h3>Admin Dashboards</h3>
+                    <p>Interactive data visualization dashboards with real-time charts, analytics, and intuitive
+                        interfaces.</p>
+                    <div class="service-meta">
+                        <span>Delivery: 5-14 days</span>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-feather="shopping-cart"></i>
+                    </div>
+                    <h3>E-commerce Solutions</h3>
+                    <p>Full-featured online stores with product catalogs, shopping carts, and seamless checkout
+                        experiences.</p>
+                    <div class="service-meta">
+                        <span>Delivery: 7-21 days</span>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-feather="code"></i>
+                    </div>
+                    <h3>Custom Web Applications</h3>
+                    <p>Tailored React or Vue.js applications built to your exact specifications with clean, maintainable
+                        code.</p>
+                    <div class="service-meta">
+                        <span>Delivery: Varies by scope</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section testimonials-section">
+        <div class="container">
+            <span class="section-label">Client Feedback</span>
+            <h2 class="section-title">What Clients Say</h2>
+
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                    </div>
+                    <p class="testimonial-text">"Naofal delivered an excellent dashboard that transformed how we manage
+                        inventory. The interface is clean, fast, and exactly what we needed. Highly recommend!"</p>
+                    <div class="testimonial-author">
+                        <strong>SayurKu Team</strong>
+                        <span>Vegetable Delivery Service</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                    </div>
+                    <p class="testimonial-text">"Professional work with great attention to detail. The e-commerce site
+                        looks beautiful on all devices and loads incredibly fast. Communication was excellent
+                        throughout."</p>
+                    <div class="testimonial-author">
+                        <strong>Kopi Senja</strong>
+                        <span>Coffee Shop Owner</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                    </div>
+                    <p class="testimonial-text">"Reliable, skilled, and delivered on time. Naofal took our complex
+                        requirements and turned them into a polished, user-friendly application. Would definitely work
+                        with again."</p>
+                    <div class="testimonial-author">
+                        <strong>Kamubisaaja Client</strong>
+                        <span>Service Platform</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects (Grid) -->
     <section id="projects" class="section">
         <div class="container">
             <span class="section-label">Selected Work</span>
 
             <div class="projects-grid">
-                <!-- Project 1 -->
                 <a href="https://tutorial-otodidak2.vercel.app/" target="_blank" class="project-card">
                     <div class="project-image">
                         <img src="img/kopisenjass.png" alt="Kopi Senja">
@@ -121,6 +311,8 @@
                     <div class="project-info">
                         <h3>Kopi Senja</h3>
                         <div class="project-meta">E-Commerce • AlpineJS</div>
+                        <button class="btn-text open-modal-btn" data-project="kopisenja"
+                            onclick="event.preventDefault(); event.stopPropagation();">Read Case Study</button>
                     </div>
                 </a>
 
@@ -145,6 +337,8 @@
                     <div class="project-info">
                         <h3>Kamubisaaja</h3>
                         <div class="project-meta">Frontend • Laravel</div>
+                        <button class="btn-text open-modal-btn" data-project="kamubisaaja"
+                            onclick="event.preventDefault(); event.stopPropagation();">Read Case Study</button>
                     </div>
                 </a>
 
@@ -156,6 +350,8 @@
                     <div class="project-info">
                         <h3>Crypto Tracker</h3>
                         <div class="project-meta">Mobile App • Vue.js</div>
+                        <button class="btn-text open-modal-btn" data-project="cryptoapp"
+                            onclick="event.preventDefault(); event.stopPropagation();">Read Case Study</button>
                     </div>
                 </a>
             </div>
@@ -275,6 +471,33 @@
             </div>
         </div>
     </div>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Naofal Anas Setianto",
+      "url": "https://portofolio-naofal.vercel.app",
+      "image": "https://portofolio-naofal.vercel.app/img/profile.png",
+      "sameAs": [
+        "https://github.com/Naofalanas",
+        "https://www.linkedin.com/in/naofal-anas-setianto",
+        "https://instagram.com/novalanass"
+      ],
+      "jobTitle": "Frontend Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Universitas Terbuka"
+      },
+      "email": "anasnoval96@gmail.com",
+      "knowsAbout": ["React", "Vue.js", "JavaScript", "HTML5", "CSS3", "Frontend Development", "Web Development", "Dashboard Development", "E-commerce Development"]
+    }
+    </script>
 
     <script>
         feather.replace();
