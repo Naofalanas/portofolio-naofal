@@ -197,6 +197,19 @@ const caseStudies = {
             { title: "Interactive Charts", desc: "Visual price charts showing historical trends and market movements." }
         ],
         stack: ["Vue.js", "API Integration", "Chart.js", "Progressive Web App"]
+    },
+    konstruksi: {
+        title: "Construction Landing Page",
+        tag: "Case Study",
+        meta: { year: "2025", role: "Frontend Developer" },
+        image: "img/konstruksiss.png",
+        challenge: "Make a construction landing page with a modern and professional design that is easy to navigate and provides information about the construction company.",
+        solution: "Built with Tailwind CSS and AlpineJS.",
+        features: [
+            { title: "Modern Design", desc: "Modern and professional design that is easy to navigate." },
+            { title: "Mobile-Optimized", desc: "Responsive design that is easy to navigate on mobile devices." },
+        ],
+        stack: ["Tailwind CSS", "AlpineJS"]
     }
 };
 
