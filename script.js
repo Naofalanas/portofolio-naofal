@@ -142,25 +142,10 @@ const modalOverlay = document.querySelector(".modal-overlay");
 
 // Case study data
 const caseStudies = {
-    sayurku: {
-        title: "SayurKu Dashboard",
-        tag: "Case Study",
-        meta: { year: "2024", role: "Lead Frontend Developer" },
-        image: "img/ssdash.png",
-        challenge: "SayurKu, a vegetable delivery startup, was drowning in spreadsheets. Their team spent 3+ hours daily manually tracking inventory, orders, and sales data across multiple Excel files. They needed a centralized dashboard to visualize business metrics and reduce operational overhead.",
-        solution: "I designed and built a comprehensive admin dashboard from scratch using React and Chart.js. The interface transforms complex data into actionable insights — admins can now monitor sales trends, track inventory levels, and manage orders from a single screen. The result? A 40% reduction in time spent on daily reporting.",
-        features: [
-            { title: "Real-time Analytics", desc: "Interactive Chart.js graphs showing daily/weekly/monthly sales, revenue trends, and top-selling products." },
-            { title: "Inventory Management", desc: "Low-stock alerts and automated tracking reduced stockouts by 25%." },
-            { title: "Responsive Dashboard", desc: "Fully functional on tablets — owners can check metrics on-the-go." },
-            { title: "Clean Data Tables", desc: "Sortable, filterable order lists with export functionality." }
-        ],
-        stack: ["React", "Chart.js", "Tailwind CSS", "Vite", "React Router"]
-    },
     kopisenja: {
         title: "Kopi Senja E-Commerce",
         tag: "Case Study",
-        meta: { year: "2024", role: "Sole Developer" },
+        meta: { year: "2024", role: "Fullstack Developer" },
         image: "img/kopisenjass.png",
         challenge: "Kopi Senja, a local coffee shop, was missing online sales opportunities. Their customers frequently asked about online ordering, but the shop had no web presence. They needed a fast, beautiful e-commerce site that could handle product browsing and ordering — without the complexity of a full backend.",
         solution: "Built a lightweight, blazing-fast e-commerce frontend using AlpineJS and Tailwind CSS. No heavy frameworks — just optimized vanilla code that loads in under 2 seconds. The shopping cart uses local storage for persistence, and orders are processed via WhatsApp integration for simplicity.",
@@ -172,20 +157,35 @@ const caseStudies = {
         ],
         stack: ["AlpineJS", "Tailwind CSS", "HTML5", "JavaScript", "LocalStorage"]
     },
-    kamubisaaja: {
-        title: "Kamubisaaja Platform",
+    admin_dashboard_kappers: {
+        title: "Admin Dashboard Kappers",
         tag: "Case Study",
-        meta: { year: "2024", role: "Frontend Developer & API Integration" },
-        image: "img/kamubisaajass.png",
-        challenge: "Kamubisaaja needed to launch their service marketplace but their backend team had no frontend expertise. The platform required handling 500+ service listings, complex filtering, user authentication flows, and seamless integration with their Laravel API — all while maintaining a professional, trustworthy appearance.",
+        meta: { year: "2025", role: "Fullstack Developer" },
+        image: "img/admindashboardkappers.png",
+        challenge: "Kappers, a local barbershop, needed a way to manage their appointments and customers. They had no web presence and were missing out on potential customers. They needed a fast, beautiful e-commerce site that could handle product browsing and ordering — without the complexity of a full backend.",
+        solution: "Built a lightweight, blazing-fast admin dashboard using AlpineJS and Tailwind CSS. No heavy frameworks — just optimized vanilla code that loads in under 2 seconds. The shopping cart uses local storage for persistence, and orders are processed via WhatsApp integration for simplicity.",
+        features: [
+            { title: "Realtime Dashboard", desc: "Real-time updates with AlpineJS reactivity — no page reloads needed." },
+            { title: "User Friendly Interface", desc: "User friendly interface for user to use this dashboard." },
+            { title: "Complete Features", desc: "Complete features for admin dashboard to manage barbershop." },
+            { title: "Statistics", desc: "Statistics for admin dashboard to manage barbershop." }
+        ],
+        stack: ["AlpineJS", "Tailwind CSS", "HTML5", "JavaScript", "Supabase"]
+    },
+    kappers: {
+        title: "Kappers Barbershop",
+        tag: "Case Study",
+        meta: { year: "2025", role: "Fullstack Developer" },
+        image: "img/barber.png",
+        challenge: "Kappers, a local barbershop, needed a way to manage their appointments and customers. They had no web presence and were missing out on potential customers. They needed a fast, beautiful e-commerce site that could handle product browsing and ordering — without the complexity of a full backend.",
         solution: "Developed the complete frontend layer from Figma designs to production. Built a robust service discovery system with multi-parameter filtering, implemented secure authentication flows, and created reusable components for consistent UX across 15+ pages. Worked closely with backend team to define API contracts.",
         features: [
             { title: "Advanced Service Filtering", desc: "Multi-select categories, price range, location — handles 500+ listings smoothly." },
             { title: "Secure Auth Flow", desc: "Login, registration, password reset with proper validation and error handling." },
             { title: "API Integration", desc: "RESTful API consumption with loading states, error boundaries, and retry logic." },
-            { title: "Component Library", desc: "Built 20+ reusable components ensuring design consistency across the platform." }
+            { title: "Booking System", desc: "Booking system for barbershop appointments." }
         ],
-        stack: ["Laravel Blade", "Bootstrap 5", "JavaScript ES6", "REST API", "Git"]
+        stack: ["AlpineJS", "Tailwind CSS", "HTML5", "JavaScript", "Supabase"]
     },
     cryptoapp: {
         title: "Crypto Tracker App",
@@ -203,7 +203,7 @@ const caseStudies = {
         stack: ["Vue.js 3", "Chart.js", "CoinGecko API", "PWA", "Service Workers"]
     },
     konstruksi: {
-        title: "Construction Landing Page",
+        title: "Construction Company Profile",
         tag: "Case Study",
         meta: { year: "2025", role: "Sole Developer & Designer" },
         image: "img/konstruksiss.png",
@@ -216,7 +216,23 @@ const caseStudies = {
             { title: "Mobile-Perfect", desc: "60% of construction searches are mobile — fully responsive with fast load times." }
         ],
         stack: ["Tailwind CSS", "AlpineJS", "GSAP Animations", "SEO Optimized"]
-    }
+    },
+
+    undangan_digital: {
+        title: "Undangan Digital",
+        tag: "Case Study",
+        meta: { year: "2026", role: "Fullstack Developer" },
+        image: "img/mockup-undangandigital.png",
+        challenge: "Many couples want to create digital wedding invitations but are constrained by high costs and unappealing designs. Additionally, many couples want to create digital wedding invitations but are constrained by high costs and unappealing designs.",
+        solution: "Created a digital invitation platform that is affordable and has an attractive appearance. Additionally, this platform is equipped with features that make it easier for couples to create digital wedding invitations.",
+        features: [
+            { title: "Interesting display", desc: "Attractive and modern appearance with elegant design." },
+            { title: "Affordable price", desc: "Affordable price for all." },
+            { title: "Complete features", desc: "Complete features and easy to use." },
+            { title: "Responsive", desc: "Responsive display and can be accessed on various devices." }
+        ],
+        stack: ["Bootstrap 5", "JavaScript ES6", "REST API", "Git"]
+    },
 }
 
 if (modal) {
